@@ -1,4 +1,6 @@
+
 import React from "react";
+import pro from "../assets/pro.png";
 import GlassCard from "./GlassCard";
 import { motion } from "framer-motion";
 
@@ -19,10 +21,11 @@ export default function About({ profile }) {
         >
           <div className="glass rounded-3xl p-6 flex justify-center items-center">
             <img
-              src="/pro.png"
+              src={pro}
               alt="Profile"
               className="w-72 h-[360px] object-cover rounded-2xl shadow-2xl"
             />
+            
           </div>
         </motion.div>
 
