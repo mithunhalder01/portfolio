@@ -1,3 +1,4 @@
+import profile from "../assets/profile.png";
 import { motion } from "framer-motion";
 import {
   SiReact,
@@ -117,11 +118,10 @@ export default function Hero() {
 
           {/* PROFILE CARD */}
           <div className="relative z-20 glass rounded-3xl p-3">
-            <img
-              src="/profile.png"
+            <img src={profile} 
               alt="Mithun"
               className="w-64 h-80 object-cover rounded-2xl"
-            />
+              />
           </div>
         </div>
       </div>
