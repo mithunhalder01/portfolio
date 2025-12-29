@@ -1,8 +1,15 @@
+import nova from "../assets/nova.png";
+import img1 from "../assets/img1.png";
+import gym from "../assets/gym.png";
+import imgcodex from "../assets/img-codex.png";
+import portfolio from "../assets/portfolio.png";
+
+
 export const profile = {
 name: 'Mithun Halder',
 title: 'Full Stack Developer',
 location: 'Noida, India',
-email: 'mithunhalder7500@gmail.com',
+email: 'mithunhaldar7500@gmail.com',
 phone: '+91 63995 19654',
 about: `I build fast, accessible and beautiful web experiences using React, Node.js and cloud platforms. I love clean UI, elegant code and shipping products that people use.`,
 }
@@ -22,7 +29,7 @@ export const projects = [
     desc: "AI powered resume builder and ATS optimizer",
     tags: ["React", "Tailwind", "Vite", "Node"],
     // Unsplash placeholder (unique per project)
-    image: "/img1.png",
+    image: img1,
     link: "https://kartikpainterservice.github.io/kartikpainter/",
     repo: "https://github.com/kartikpainterservice/kartikpainter",
   },
@@ -31,7 +38,7 @@ export const projects = [
     title: "NovaByte Labs — Company Site",
     desc: "Marketing website and analytics dashboard",
     tags: ["React", "Tailwind", "Vite", "Node", "Express", "Firebase"],
-    image: "/nova.png",
+    image: nova,
     link: "#",
     repo: "#",
   },
@@ -40,7 +47,7 @@ export const projects = [
     title: "FITNESS GYM — Template",
     desc: "Developer portfolio template built with React + Tailwind",
     tags: ["HTML5", "CSS3", "JS"],
-    image: "/img-gym.png",
+    image: gym,
     link: "https://mithunhalder01.github.io/gym-web/",
     repo: "https://github.com/mithunhalder01/gym-web",
   },
@@ -49,8 +56,8 @@ export const projects = [
     title: "Portfolio - web",
     desc: "old portfolio manager with real-time sync and offline support",
     tags: ["HTML5", "CSS3", "Tailwind", "JS"],
-    image: "/img2.png",
-    link: "#",
+    image: portfolio,
+    link: "https://mithun-gic.github.io/my-portfolio/",
     repo: "#",
   },
   {
@@ -58,7 +65,7 @@ export const projects = [
     title: "Landing — Product Launch",
     desc: "High-converting landing page using modern CSS and animations",
     tags: ["HTML", "CSS", "Tailwind"],
-    image: "/img-codex.png",
+    image: imgcodex,
     link: "https://mithunhalder01.github.io/Codex/",
     repo: "https://github.com/mithunhalder01/Codex",
   },

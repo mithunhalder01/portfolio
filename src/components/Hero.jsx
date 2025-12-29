@@ -1,5 +1,7 @@
-import profile from "../assets/profile.png";
+import pro from "/pro.png";
+import React from "react";
 import { motion } from "framer-motion";
+
 import {
   SiReact,
   SiNodedotjs,
@@ -118,7 +120,8 @@ export default function Hero() {
 
           {/* PROFILE CARD */}
           <div className="relative z-20 glass rounded-3xl p-3">
-            <img src={profile} 
+            <img
+              src={pro}
               alt="Mithun"
               className="w-64 h-80 object-cover rounded-2xl"
               />
