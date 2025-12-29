@@ -36,7 +36,7 @@ export default function About({ profile }) {
           <p className="text-xs uppercase tracking-widest text-cyan-300 font-medium">About us</p>
 
           <h2 className="mt-2 text-3xl md:text-4xl font-bold leading-tight">
-            I AM AVAILABLE FOR <span className="text-white/80">Web</span> <span className="text-cyan-300">Develepment</span> PROJECT
+            I AM AVAILABLE FOR <span className="text-white/80">Web</span> <span className="text-cyan-300">Develepment</span> PROJECTS
           </h2>
 
           <p className="mt-4 text-white/60 max-w-xl">{bio}</p>
@@ -48,7 +48,7 @@ export default function About({ profile }) {
             </GlassCard>
 
             <GlassCard className="px-5 py-4">
-              <p className="text-2xl font-bold text-cyan-300">15+</p>
+              <p className="text-2xl font-bold text-cyan-300">2+</p>
               <p className="text-sm text-white/60">Years Experience</p>
             </GlassCard>
 
