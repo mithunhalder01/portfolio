@@ -1,88 +1,105 @@
-import nova from "../assets/nova.png";
-import img1 from "../assets/img1.png";
-import gym from "../assets/gym.png";
-import imgcodex from "../assets/img-codex.png";
-import portfolio from "../assets/portfolio.png";
-
+// ✅ Image imports hata diye — ProjectCard ab link se auto screenshot fetch karega
 
 export const profile = {
-name: 'Mithun Halder',
-title: 'Full Stack Developer',
-location: 'Noida, India',
-email: 'mithunhaldar7500@gmail.com',
-phone: '+91 63995 19654',
-about: `I build fast, accessible and beautiful web experiences using React, Node.js and cloud platforms. I love clean UI, elegant code and shipping products that people use.`,
+  name: 'Mithun Halder',
+  title: 'Full Stack Developer',
+  location: 'Noida, India',
+  email: 'mithunhalde.dev@gmail.com',
+  phone: '+91 63995 19654',
+  about: `I build fast, accessible and beautiful web experiences using React, Node.js and cloud platforms. I love clean UI, elegant code and shipping products that people use.`,
 }
 
 export const skills = [
-{name:'React', level:90},
-{name:'Node.js', level:85},
-{name:'TypeScript', level:70},
-{name:'TailwindCSS', level:92},
-{name:'Postgres', level:70},
+  { name: 'React', level: 90 },
+  { name: 'Node.js', level: 85 },
+  { name: 'TypeScript', level: 70 },
+  { name: 'TailwindCSS', level: 92 },
+  { name: 'Postgres', level: 70 },
 ]
 
 export const projects = [
   {
     id: "proj-1",
-    title: "Kartik Painter Service",
-    desc: "AI powered resume builder and ATS optimizer",
+    title: "Kartik Painter Services",
+    desc: "Professional painting contractor website for a Noida-based business — service listings, contact & booking.",
     tags: ["React", "Tailwind", "Vite", "Node"],
-    // Unsplash placeholder (unique per project)
-    image: img1,
-    link: "https://kartikpainterservice.github.io/kartikpainter/",
-    repo: "https://github.com/kartikpainterservice/kartikpainter",
+    link: "https://kartikpainterservices.vercel.app/",
+    repo: "https://github.com/mithunhalder01/kartikpainterservices",
   },
   {
     id: "proj-2",
-    title: "NovaByte Labs — Company Site",
-    desc: "Marketing website and analytics dashboard",
-    tags: ["React", "Tailwind", "Vite", "Node", "Express", "Firebase"],
-    image: nova,
-    link: "#",
-    repo: "#",
+    title: "Get Fit N Fine Gym",
+    desc: "Modern gym landing page with bold design — membership plans, schedule & motivational sections.",
+    tags: ["HTML5", "CSS3", "JS"],
+    link: "https://get-fit-n-fine-gym.vercel.app/",
+    repo: "https://github.com/mithunhalder01/GetFit-N-Fine-Gym",
   },
   {
     id: "proj-3",
+    title: "The Crochet Land",
+    desc: "Elegant e-commerce style website for a handmade crochet products brand — product showcase & shop sections.",
+    tags: ["React", "Tailwind", "Vite"],
+    link: "https://the-crochet-land.vercel.app/",
+    repo: "#",
+  },
+  {
+    id: "proj-4",
     title: "FITNESS GYM — Template",
     desc: "Developer portfolio template built with React + Tailwind",
     tags: ["HTML5", "CSS3", "JS"],
-    image: gym,
     link: "https://mithunhalder01.github.io/gym-web/",
     repo: "https://github.com/mithunhalder01/gym-web",
   },
   {
-    id: "proj-4",
-    title: "Portfolio - web",
-    desc: "old portfolio manager with real-time sync and offline support",
-    tags: ["HTML5", "CSS3", "Tailwind", "JS"],
-    image: portfolio,
-    link: "https://mithun-gic.github.io/my-portfolio/",
-    repo: "#",
-  },
-  {
     id: "proj-5",
-    title: "Landing — Product Launch",
-    desc: "High-converting landing page using modern CSS and animations",
-    tags: ["HTML", "CSS", "Tailwind"],
-    image: imgcodex,
-    link: "https://mithunhalder01.github.io/Codex/",
-    repo: "https://github.com/mithunhalder01/Codex",
+    title: "Tanisha — Makeup Artist",
+    desc: "Personal portfolio website for a professional makeup artist — services, gallery & booking contact.",
+    tags: ["React", "Tailwind", "Vite"],
+    link: "https://tanisha-makeup-artist2006.vercel.app/",
+    repo: "#",
   },
   {
     id: "proj-6",
-    title: "API Dashboard",
-    desc: "Monitoring dashboard for backend APIs",
-    tags: ["React", "Node", "Vite"],
-    image: "https://source.unsplash.com/800x600/?dashboard,analytics",
-    link: "#",
+    title: "ForgeFit Gym",
+    desc: "Powerful gym website with bold branding — workout plans, trainer profiles & membership sections.",
+    tags: ["React", "Tailwind", "Vite"],
+    link: "https://forgefit-standard.vercel.app/",
     repo: "#",
   },
+  {
+  id: "proj-7",
+  title: "Dentist Web",
+  desc: "Clean and professional dental clinic website — services, appointment booking & doctor profile sections.",
+  tags: ["HTML5", "CSS3", "JS"],
+  link: "https://mithunhalder01.github.io/dentist-webb/",
+  repo: "https://github.com/mithunhalder01/dentist-webb",
+},
+  {
+  id: "proj-8",
+  title: "FitKit Gym",
+  desc: "Clean and energetic fitness website — workout plans, victory mindset branding & membership CTA.",
+  tags: ["React", "Tailwind", "Vite"],
+  link: "https://gymfit-demo-delta.vercel.app/",
+  repo: "#",
+},
+{
+  id: "proj-9",
+  title: "ForgeFit — Body Shape",
+  desc: "Gym landing page focused on body transformation — bold typography, workout sections & motivational design.",
+  tags: ["React", "Tailwind", "Vite"],
+  link: "https://forgefit-sooty.vercel.app/",
+  repo: "#",
+},
 ];
 
 export const experience = [
-{ company:'NovaByte Labs', role:'Founder / Fullstack', date:'2024 — Present', bullets:[
-'Built product roadmap and frontend dashboards',
-'Led small engineering team and shipped v1'
-]},
+  {
+    company: 'NovaByte Labs',
+    role: 'Founder / Fullstack',
+    date: '2024 — Present',
+    bullets: [
+      'Built product roadmap and frontend dashboards',
+      'Led small engineering team and shipped v1'
+    ]
+  },
 ]
