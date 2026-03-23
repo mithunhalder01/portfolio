@@ -1,6 +1,5 @@
 import React from 'react'
 import { projects } from '../data/data'
-import { motion } from 'framer-motion'
 import ProjectCard from './ProjectCard'
 
 export default function Projects() {
@@ -13,11 +12,8 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
           {projects.map((p) => (
-            <motion.div 
-              key={p.id} 
-              whileHover={{ y: -6 }} 
-              className="block"
-            >
+            // ✅ Sirf plain div — animation ProjectCard.jsx ke andar handle ho raha hai
+            <div key={p.id} className="block">
               <div className="h-full flex flex-col bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-xl hover:bg-white/20 transition duration-300">
                 <ProjectCard
                   title={p.title}
@@ -31,7 +27,7 @@ export default function Projects() {
                   {p.desc}
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
