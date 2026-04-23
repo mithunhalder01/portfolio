@@ -65,7 +65,7 @@ export default function Hero() {
           <SocialIcons
         className="flex justify-center md:justify-start gap-3 mt-6 mb-6"
         links={{
-            instagram: "https://www.instagram.com/the_mithunhalder/",
+            instagram: "https://www.instagram.com/mithun_webdev/",
             linkedin: "https://www.linkedin.com/in/mithun-halder-946704362/",
             github: "https://github.com/mithunhalder01",
             facebook: "https://www.facebook.com/profile.php?id=61554961905528",

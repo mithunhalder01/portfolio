@@ -99,7 +99,7 @@ export default function Testimonials() {
         {/* Prev */}
         <button
           onClick={prev}
-          className="shrink-0 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center text-white transition hover:scale-110"
+          className="hidden sm:flex shrink-0 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 items-center justify-center text-white transition hover:scale-110"
         >
           <FiChevronLeft size={18} />
         </button>
@@ -121,7 +121,8 @@ export default function Testimonials() {
                 }}
                 transition={{ type: "spring", stiffness: 260, damping: 28 }}
                 onClick={() => !isCenter && setActive(idx)}
-                className={`flex-1 min-w-0 rounded-3xl p-5 md:p-8 cursor-pointer select-none transition-colors duration-300
+                className={`flex-1 min-w-0 rounded-3xl p-6 md:p-8 cursor-pointer select-none transition-colors duration-300
+                  ${!isCenter ? "hidden md:flex" : "flex flex-col"}
                   ${isCenter
                     ? "bg-white/10 backdrop-blur-md border border-cyan-400/25 shadow-[0_0_40px_rgba(34,211,238,0.07)]"
                     : "bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/8"
@@ -184,7 +185,7 @@ export default function Testimonials() {
         {/* Next */}
         <button
           onClick={next}
-          className="shrink-0 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center text-white transition hover:scale-110"
+          className="hidden sm:flex shrink-0 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 items-center justify-center text-white transition hover:scale-110"
         >
           <FiChevronRight size={18} />
         </button>

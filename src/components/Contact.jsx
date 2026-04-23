@@ -63,7 +63,7 @@ export default function Contact() {
                 <span className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
                   <FiMail />
                 </span>
-                <span>mithunhaldar7500@gmail.com</span>
+                <span>mithunhalder.dev@gmail.com</span>
               </div>
 
               <div className="flex items-center gap-4">

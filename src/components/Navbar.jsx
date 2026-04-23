@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX, FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 
 export default function Navbar() {
-  const links = ["About", "Skills", "Projects", "Experience"];
+  const links = ["About", "Skills", "Projects", "Experience", "Contact"];
   const [open, setOpen] = useState(false);
 
   // Lock body scroll when mobile menu open
@@ -47,14 +47,21 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* RIGHT CTA */}
+          {/* RIGHT SOCIALS */}
           <div className="flex items-center gap-3">
-            <a
-              href="#contact"
-              className="hidden sm:inline-flex px-4 py-2 rounded-lg bg-cyan-400 text-black text-sm font-medium hover:bg-cyan-300 transition"
-            >
-              Contact
-            </a>
+            <div className="hidden sm:flex items-center gap-5 mr-2 text-white/70">
+              <a href="https://github.com/mithunhalder01" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition">
+                <FiGithub size={18} />
+              </a>
+              <a href="https://www.linkedin.com/in/mithun-halder-946704362/" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition">
+                <FiLinkedin size={18} />
+              </a>
+              <a href="https://www.instagram.com/mithun_webdev/" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition">
+                <FiInstagram size={18} />
+              </a>
+            </div>
+
+            <div className="hidden sm:block w-px h-6 bg-white/10 mx-2" />
 
             {/* MOBILE TOGGLE */}
             <button
@@ -113,14 +120,6 @@ export default function Navbar() {
                     {link}
                   </a>
                 ))}
-
-                <a
-                  href="#contact"
-                  onClick={() => setOpen(false)}
-                  className="mt-2 py-3 rounded-xl bg-cyan-400 text-black font-medium text-center hover:bg-cyan-300 transition"
-                >
-                  Contact
-                </a>
               </div>
             </motion.div>
           </>

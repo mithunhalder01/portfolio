@@ -61,10 +61,10 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Let’s Connect</h4>
 
             <a
-              href="mailto:mithunhalder01@gmail.com"
+              href="mailto:mithunhalder.dev@gmail.com"
               className="inline-flex items-center gap-2 text-sm text-white/80 hover:text-cyan-400 transition"
             >
-              <FiMail /> mithunhaldar7500@gmail.com
+              <FiMail /> mithunhalder.dev@gmail.com
             </a>
 
             {/* Social */}
@@ -78,7 +78,7 @@ export default function Footer() {
                 icon={<FiLinkedin />}
               />
               <Social
-                href="https://www.instagram.com/the_mithunhalder/"
+                href="https://www.instagram.com/mithun_webdev/"
                 icon={<FiInstagram />}
               />
             </div>

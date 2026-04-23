@@ -44,10 +44,10 @@ export const projects = [
   },
   {
     id: "proj-4",
-    title: "FITNESS GYM — Template",
-    desc: "Developer portfolio template built with React + Tailwind",
-    tags: ["HTML5", "CSS3", "JS"],
-    link: "https://mithunhalder01.github.io/gym-web/",
+    title: "ShopVault",
+    desc: "Full-stack e-commerce platform with React frontend, Node.js backend, SQLite database, JWT auth & REST API.",
+    tags: ["React", "Node.js", "SQLite", "JWT", "REST API", "Tailwind", "Vite"],
+    link: "https://https-github-com-mithunhalder01-eco.vercel.app/",
     repo: "https://github.com/mithunhalder01/gym-web",
   },
   {
