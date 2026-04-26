@@ -1,4 +1,5 @@
-import pro from "/pro.png";
+// Image ko src/assets mein move karein aur relative import use karein
+import pro from "../assets/pro.png";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -10,7 +11,10 @@ import {
   SiHtml5,
   SiCss3,
 } from "react-icons/si";
+import { FiDownload } from "react-icons/fi";
 
+// File ko src/assets folder mein rakh kar yaha import karein
+import resume from "../assets/Mithun_Halder_Resume.pdf";
 
 import SocialIcons from "./SocialIcons";
 
@@ -56,8 +60,12 @@ export default function Hero() {
             <a href="#contact" className="px-6 py-3 rounded-xl bg-cyan-400 text-black font-medium hover:opacity-90 transition">
               Hire Me
             </a>
-            <a href="#projects" className="px-6 py-3 rounded-xl border border-white/20 text-white hover:bg-white/10 transition">
-              View Projects
+            <a
+              href={resume}
+              download="Mithun_Halder_Resume.pdf"
+              className="px-6 py-3 rounded-xl border border-white/20 text-white hover:bg-white/10 transition flex items-center gap-2"
+            >
+              Download CV <FiDownload />
             </a>
           </div>
 

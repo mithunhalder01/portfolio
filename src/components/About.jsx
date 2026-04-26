@@ -1,7 +1,8 @@
 
 import React from "react";
 import GlassCard from "./GlassCard";
-import about from "/about.png";
+// Image ko src/assets mein move karein aur relative import use karein
+import about from "../assets/about.png";
 import { motion } from "framer-motion";
 
 
