@@ -7,8 +7,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:docs": "vite build && rsync -a --delete dist/ docs/",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "deploy:docs": "npm run build:docs"
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
