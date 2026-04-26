@@ -1,8 +1,8 @@
 
 import React from "react";
 import GlassCard from "./GlassCard";
-// Image ko src/assets mein move karein aur relative import use karein
-import about from "../assets/about.png";
+// public folder se direct use karein
+const about = "/about.png";
 import { motion } from "framer-motion";
 
 
@@ -37,7 +37,7 @@ export default function About({ profile }) {
           <p className="text-xs uppercase tracking-widest text-cyan-300 font-medium">About us</p>
 
           <h2 className="mt-2 text-3xl md:text-4xl font-bold leading-tight">
-            I AM AVAILABLE FOR <span className="text-white/80">Web</span> <span className="text-cyan-300">Develepment</span> PROJECTS
+            I AM AVAILABLE FOR <span className="text-white/80">Web</span> <span className="text-cyan-300">Development</span> PROJECTS
           </h2>
 
           <p className="mt-4 text-white/60 max-w-xl">{bio}</p>

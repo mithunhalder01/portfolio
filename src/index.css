@@ -22,10 +22,11 @@ background-color: #07070b;
 }
 
 /* Glass card helper */
-.glass{
-background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-border: 1px solid var(--glass);
-backdrop-filter: blur(8px);
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 /* Focus ring */
@@ -43,12 +44,4 @@ backdrop-filter: blur(8px);
 /* Responsive tweaks (example) */
 @media (min-width:1024px){
 .glass{ border-radius:24px; }
-}
-
-
-.glass {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
 }

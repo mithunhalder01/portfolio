@@ -54,7 +54,7 @@ export default function ProjectCard({
       ? images[currentIndex % images.length]
       : image || null;
 
-  const finalFallback = `https://source.unsplash.com/800x600/?${encodeURIComponent(query)}`;
+  const finalFallback = `https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop&q=80`;
 
   // What to actually render as <img> src
   const [displaySrc, setDisplaySrc] = useState(manualImageSrc || finalFallback);

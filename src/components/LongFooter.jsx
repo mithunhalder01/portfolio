@@ -1,7 +1,6 @@
 import {
   FiGithub,
   FiLinkedin,
-  FiTwitter,
   FiMail,
   FiArrowUpRight,
   FiInstagram,
