@@ -1,4 +1,4 @@
-// Image ko src/assets mein move karein aur relative import use karein
+// Image ko public folder mein use karein
 import pro from "../assets/pro.png";
 import React from "react";
 import { motion } from "framer-motion";
