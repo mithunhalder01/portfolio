@@ -1,7 +1,7 @@
 
 import React from "react";
 import GlassCard from "./GlassCard";
-// public folder se direct use karein
+// root folder se about.png use karein
 const about = "/about.png";
 import { motion } from "framer-motion";
 
