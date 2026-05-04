@@ -13,8 +13,8 @@ import {
 } from "react-icons/si";
 import { FiDownload } from "react-icons/fi";
 
-// File ko src/assets folder mein rakh kar yaha import karein
-import resume from "../assets/Mithun_Halder_Resume-Bi8ND5vi.pdf";
+// File ko public folder mein use karein
+import resume from "/Mithun_Halder_resume.pdf";
 
 import SocialIcons from "./SocialIcons";
 
