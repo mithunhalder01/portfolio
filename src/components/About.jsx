@@ -13,7 +13,10 @@ export default function About({ profile }) {
     "I’m a web developer specializing in building beautiful, accessible and performant UI. I focus on delivering pixel-perfect designs and seamless front-end experiences using modern tools and best practices.";
 
   return (
-    <section id="about" className="py-12 md:py-16">
+    <section id="about" className="relative py-12 md:py-24 overflow-hidden">
+      {/* Decorative Blob */}
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-cyan-500/20 rounded-full blur-[100px] -z-10" />
+
       <div className="max-w-7xl ml-[1rem] mr-[1rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center px-4">
 
         {/* LEFT: PROFILE CARD */}
@@ -22,13 +25,13 @@ export default function About({ profile }) {
           whileInView={{ opacity: 1, x: 0 }}
           className="relative"
         >
-          <div className="glass rounded-3xl p-6 flex justify-center items-center">
+          <div className="glass rounded-[2rem] p-4 flex justify-center items-center relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <img
               src={about}
               alt="Profile"
-              className="w-72 h-[360px] object-cover rounded-2xl shadow-2xl"
+              className="w-72 h-[400px] object-cover rounded-2xl shadow-2xl relative z-10 transition-transform duration-500 group-hover:scale-[1.02]"
             />
-            
           </div>
         </motion.div>
 
